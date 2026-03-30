@@ -1,0 +1,23 @@
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+    volumes:
+      - localstack_data:/var/lib/localstack
+
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - SAM_API_URL=http://host.docker.internal:3000
+    depends_on:
+      - localstack
+
+volumes:
+  localstack_data:
