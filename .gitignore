@@ -35,5 +35,8 @@ npm-debug.log*
 .cache/
 temp/
 tmp/
-.aws-sam/*
-.DS_Store
+.aws-sam/
+.venv/
+
+# Model weights (too large for git)
+*.pth
