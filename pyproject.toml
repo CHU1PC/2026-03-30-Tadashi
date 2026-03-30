@@ -1,0 +1,17 @@
+[project]
+name = "sam-image-classifier"
+version = "0.1.0"
+description = "Serverless image classifier using ONNX Runtime + ConvNeXt Small"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.42.77",
+    "loguru>=0.7.3",
+    "onnxscript>=0.6.2",
+    "pytest>=8.0.0",
+    "timm>=1.0.0",
+    "torch>=2.11.0",
+    "fastapi[standard]>=0.115.0",
+    "httpx>=0.28.0",
+    "onnxruntime>=1.24.4",
+]
