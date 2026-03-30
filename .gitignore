@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.o
+*.a
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+.cache/
+temp/
+tmp/
+.aws-sam/*
+.DS_Store
